@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'SourceCodePro'; 
+    src: url('./SourceCodePro-VariableFont_wght.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'NeueMachina'; 
+    src: url('./NeueMachina-Black.woff') format('truetype'); 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

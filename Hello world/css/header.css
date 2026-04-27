@@ -1,0 +1,709 @@
+    .head {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        
+        width: 100%;
+        min-height: 97px;
+        background-color: var(--grey);
+        padding: 0 40px;
+        position: fixed;
+        
+        z-index: 1000;
+    }
+
+    .head_logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head_logo p {
+        font-size: 12px;
+        font-family: 'SourceCodePro', sans-serif;
+        color: var(--light_grey);
+    }
+
+    .head_logo h2 {
+        font-size: 20px;
+        color: var(--pink);
+        font-family: 'SourceCodePro', sans-serif;
+    }
+
+    .head_logo span {
+        color: var(--bright_green);
+    }
+
+    .head_menu {
+        display: flex; 
+        align-items: center; 
+        gap: 44px; 
+        margin-left: auto;
+    }
+
+    .menustyles {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 16px;
+        font-family: 'SourceCodePro', sans-serif;
+        position: relative;
+        padding-bottom: 4px; 
+        transition: opacity 0.2s;
+    }
+    .catalog{
+        width: 100%;
+        height: 700px;
+        padding: 0px 40px 0px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--grey);
+        gap: 70px;
+    }
+
+    .catalog_description {
+        width: 612px;
+        height: 434px;
+
+        h1 {
+            font-family: 'NeueMachina', sans-serif;
+            font-size: 48px;
+            color: var(--pink);
+        }
+
+        span {
+            font-family: 'NeueMachina', sans-serif;
+            font-size: 48px;
+
+            display: inline-block;
+            -webkit-transform: rotate(-3.2deg); 
+            -moz-transform: rotate(-3.2deg);    
+            -ms-transform: rotate(-3.2deg);     
+            -o-transform: rotate(-3.2deg);      
+            transform: rotate(-3.2deg);
+            color: var( --bright_green);
+        }
+
+        p {
+            font-family: 'SourceCodePro', sans-serif;
+            font-size: 20px;
+            color: var(--white);
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .btn {
+        margin-left: 30px;
+        width: 269px;
+        height: 65px;
+        color: var(--black);
+        border: none;
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 30px;
+        margin-top: 37px;
+        background-color: var(--bright_green);
+    }
+
+
+    .catalogforyou{
+        width: 100%;
+        height: 570px;
+        background-color: var(--grey);
+
+        p {
+            font-family: 'NeueMachina', sans-serif;
+            font-size: 24px;
+            color: var(--white);
+            padding: 40px 0px 0px 150px;
+        }
+    }
+
+    .forYouCard {
+        width: 1087px;
+        height: 257px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    .card {
+        width: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
+        margin-top: 100px; ;
+    }
+
+    .cardConteiner {
+        width: 100%;
+        height: 257px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .card_icon {
+        width: 135px;
+        height: 135px;
+        background-color: var(--bright_green); 
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2; 
+        margin-bottom: -67px; 
+    }
+
+
+    .descriptionCard {
+        width: 100%;
+        height: 144px;
+        border: 1px solid var(--bright_green);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+        padding-bottom: 25px; 
+        box-sizing: border-box;
+    }
+
+    .descriptionCard p {
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        color: var(--white);
+        padding: 0 10px; 
+        margin: 0;
+    }
+
+    .guide{
+        width: 100%;
+        height: 700px;
+        background-color: var(--black);
+    }
+
+    .headlin{
+        font-family: 'NeueMachina', sans-serif;
+        font-size: 24px;
+        color: var(--white);
+            padding: 59px 0px 0px 41px;
+    }
+
+    .content-list{
+        width: 611px;
+        height: 431px;
+        border: 1px solid var(--light_grey);
+        border-radius: 30px;
+
+        margin: 57px 200px 0px 0px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .topics-list {
+        width: 541px;
+        height: 58px;
+        border-bottom: 1px solid var(--light_grey);
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 20px; 
+
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease; 
+    }
+
+    .topics-list.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
+    .topics-list p {
+        margin: 0; 
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 16px;
+        color: var(--white);
+    } 
+
+    .topics-list-none {
+        border: none;
+    }
+
+    .guide-contest-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+    }
+
+    .guide-img {
+        width: 617px;
+        height: 521px;
+    }
+
+    .info-block {
+        width: 100%;
+        height: 643px;
+        background-color: var(--grey);
+        padding: 39px 0px 0px 40px;
+    }
+
+    .code-conteiner {
+        width: 928px;
+        height: 568px;
+        border-left: 2px dashed var(--light_grey);
+        padding: 89px 0px 0px 99px;
+    }
+
+    .code-conteiner p {
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .infoh1 {
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 24px;
+        color: var(--pink);
+
+        span {
+            font-family: 'SourceCodePro', sans-serif;
+            font-size: 24px;
+            color: var(--bright_green);
+        }
+    }
+
+    .code {
+        width: none;
+        height: 327px;
+        border-left: 2px dashed var(--light_grey);
+        margin-top: 30px;
+        padding: 68px 0px 0px 91px;
+
+        span {
+            font-family: 'SourceCodePro', sans-serif;
+            font-size: 20px;
+            color: var(--bright_green);
+        }
+    }
+
+    .info-about-courses{
+        width: 100%;
+        min-height: 318px;
+        background-color: var(--bright_green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 278px;
+
+        .p {
+            font-family: 'SourceCodePro', sans-serif;
+            font-size: 20px;
+            text-align: right;
+        }
+    }
+
+    .text-about-courses {
+        width: 223px;
+        height: 130px;
+        gap: 9px;
+    }
+
+    .description{
+        width: 499px;
+        height: 88px;
+    display: flex;
+        justify-content: space-between; 
+        align-items: center;
+
+        .text{
+            font-family: 'SourceCodePro', sans-serif;
+            font-size: 16px;
+        }
+    }
+
+    .heading{
+        font-family: 'NeueMachina', sans-serif;
+        font-size: 32px;
+    }
+
+    .Countries-in-chats{
+        width: 137px;
+        height: 88px;
+    }
+
+    .Useful-guides{
+        width: 79px;
+        height: 88px;
+    }
+
+    .Positive-reviews{
+        width: 129px;
+        height: 88px;
+    }
+
+    .info-text {
+        font-family: 'NeueMachina', sans-serif;
+        font-size: 40px;
+        text-align: center;
+            gap: 9px;
+    }
+
+    .course-cost {
+        width: 100%;
+        height: 1400px;
+        background-color: var( --grey);
+
+        padding: 0px 40px 0px 40px;
+    }
+
+
+    .paid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr; 
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 20px; 
+        width: 100%;
+        height: 646px;
+        margin: 0 auto;
+        padding-top: 157px;
+    }
+
+    .subscription-information,
+    .bottom-text {
+        margin-left: 44px;
+    }
+
+    .paid-subscription {
+        background-color: var(--bright_green);
+        border-radius: 30px;
+        grid-row: 1 / 4; 
+        grid-column: 1;
+        padding: 40px;
+    }
+
+    .subscription-price {
+        background-color: var(--hh);
+        border-radius: 30px;
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .register {
+        width: 1220px;
+        height: 460px;
+        background-color: var(--hh);
+        display: flex;
+        border-radius: 30px;
+        margin-top: 122px;
+        padding: 58px 44px;
+
+        z-index: 0;
+
+        margin: 122px auto 0;
+    }
+
+    .heading {
+    font-family: 'NeueMachina', sans-serif;
+        font-size: 32px;
+    }
+
+    .subscription-information {
+        font-size: 16px;
+        font-family: 'SourceCodePro', sans-serif;
+
+        margin-top: 34px;
+    }
+
+    .paid-subscription .heading{
+        margin-left: 20px;
+    }
+
+
+    .bottom-text {
+        font-size: 14px;
+        font-family: 'SourceCodePro', sans-serif;
+
+        margin-top: 200px;
+    }
+
+    .circle{
+        width: 120px;
+        height: 120px;
+        background-color: var(--pink);
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        p {
+            font-size: 16px;
+            font-family: 'NeueMachina', sans-serif;
+        }
+    }
+
+    .subscription-price1 {
+        width: 449px;
+        height: 131px;
+        border-radius: 40px;
+        
+        display: flex;
+        flex-direction: row;      
+        flex-wrap: nowrap;        
+        justify-content: center;  
+        align-items: center;     
+        gap: 27px;
+        padding: 0 20px;          
+
+        .heading {
+            font-size: 57px;
+            font-family: 'NeueMachina', sans-serif;
+            color: var(--white);
+            white-space: nowrap; 
+            line-height: 1;       
+        }
+
+        .date-of-receipt {
+            font-size: 20px;
+            font-family: 'NeueMachina', sans-serif;
+            color: var(--bright_green);
+            white-space: nowrap;  
+            flex-shrink: 0;       
+        }
+    }
+
+    .register-name{
+        width: 464px;
+        height: 344px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .button{
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            background-color: var(--pink);
+            border: none;
+
+            color: var(--white);
+            font-size: 16px;
+            font-family: 'SourceCodePro', sans-serif;
+            cursor: pointer;
+        }
+    }
+
+    .Fill_in-the_data{
+        font-size: 20px;
+        font-family: 'NeueMachina', sans-serif;
+            color: var(--white);
+    }
+
+    .register-input{
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 17px 42px;
+        background-color: var(--grey2);
+
+        color: var(--white);
+        font-size: 16px;
+        font-family: 'SourceCodePro', sans-serif;
+
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .register_images{
+        width: 564px;
+    height: auto;
+    object-fit: cover; 
+    margin-left: 70px;
+    }
+
+    .IT-land-conteiner{
+        width: 100%;
+        height: 20px;
+
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .IT-land{
+        font-size: 18px;
+        font-family: 'NeueMachina', sans-serif;
+            color: var(--white);
+    }
+
+    .footer {
+        width: 100%;
+        height: 290px;
+        background-color: var( --grey);
+        border-top: 2px solid var(--hh);
+        padding: 41px 40px 0px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 84px;
+    }
+
+    .all-buttons {
+        display: flex;
+        gap: 116px; 
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+
+        transition: opacity 0.2s;
+    }
+
+    .column a {
+        text-decoration: none;
+        color: var(--white);
+        font-family: 'SourceCodePro', sans-serif;
+        font-size: 16px; 
+        line-height: 1.2;
+    }
+
+    .information-about-the_websitE{
+        width: 100%;
+        height: 108px;
+        gap: 440px;
+
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .input_all{
+        width: 394px;
+        height: 108px;
+        margin-top: 26px;
+        
+        p{
+            font-size: 14px;
+            font-family: 'SourceCodePro', sans-serif;
+            color: var(--white);
+        }
+
+        input{
+            width: 394px;
+            height: 25px;
+            margin-top: 18px;
+
+            width: 100%;
+            background: transparent; 
+            border: none; 
+            border-bottom: 2px solid  var(--light_grey-50); 
+            padding: 10px 0;
+            font-size: 14px;
+            color: #fff;
+            outline: none; 
+            transition: border-color 0.3s ease;
+        }   
+    }
+
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+
+.progress-bar {
+    height: 4px;
+    background: var(--pink); 
+    width: 0%; 
+    transition: width 0.1s ease-out; 
+    box-shadow: 0 0 10px var(--pink); 
+}
+
+
+
+.register-input.invalid {
+    border-color: #ff4d4d !important;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5) !important;
+}
+
+.register-input.valid {
+    border-color: var(--bright_green) !important;
+    box-shadow: 0 0 10px rgba(173, 255, 47, 0.5) !important;
+}
+
+.register-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button.success {
+    background-color: var(--bright_green) !important;
+    color: var(--grey) !important; 
+    border-color: var(--bright_green) !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--bright_green);
+    cursor: default;
+}
+
+.button.success::after {
+    content: " ✓"; 
+}
+
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'SourceCodePro', monospace;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    border-color: var(--bright_green);
+    box-shadow: 0 0 10px rgba(173, 255, 47, 0.3);
+}
+
+.lang-btn img {
+    width: 20px;
+    border-radius: 2px;
+}
+
+.lang-switcher {
+    margin-left: 40px; 
+}

@@ -1,0 +1,158 @@
+@media (max-width: 768px) {
+    /* 1. Общие настройки */
+    .head, .catalog, .catalogforyou, .guide, .info-block, .course-cost, .footer, .info-about-courses {
+        padding: 20px; /* Уменьшаем огромные отступы */
+        height: auto;  /* Разрешаем блокам растягиваться по контенту */
+        min-height: auto;
+    }
+
+    /* 2. Шапка (Header) */
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        position: relative; /* На мобилках fixed часто мешает, если меню большое */
+    }
+    .head_menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 3. Первый экран (Catalog) */
+    .catalog {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 50px;
+    }
+    .catalog_description {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .catalog_description h1, 
+    .catalog_description span {
+        font-size: 32px; /* Уменьшаем шрифт для мобилок */
+    }
+    .catalog_description p, .btn {
+        margin-left: 0; /* Убираем левый отступ, центрируем */
+        margin-top: 20px;
+    }
+
+    /* 4. Карточки (For You) */
+    .cardConteiner {
+        flex-direction: column;
+        gap: 80px; /* Больше места для иконок, которые вылезают */
+        margin-top: 50px;
+    }
+    .card {
+        width: 100%;
+        margin-top: 0;
+    }
+    .catalogforyou p {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* 5. Гайд (Guide) */
+    .guide-contest-list {
+        flex-direction: column;
+    }
+    .content-list {
+        width: 100%;
+        margin: 30px 0;
+        height: auto;
+    }
+    .topics-list {
+        width: 90%;
+    }
+    .guide-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 6. Инфо-блоки и код */
+    .code-conteiner {
+        width: 100%;
+        padding: 40px 0 0 20px;
+        border-left: 2px dashed var(--light_grey);
+    }
+    .code {
+        padding: 30px 0 0 20px;
+        height: auto;
+    }
+
+    /* 7. Статистика (Info about courses) */
+    .info-about-courses {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+    .description {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    .info-about-courses .p {
+        text-align: center;
+    }
+
+    /* 8. Цены и подписка (Paid) */
+    .paid {
+        grid-template-columns: 1fr; /* Переключаем сетку в одну колонку */
+        grid-template-rows: auto;
+        padding-top: 50px;
+        height: auto;
+    }
+    .paid-subscription {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .subscription-price1 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .subscription-price1 .heading {
+        font-size: 40px;
+    }
+
+    /* 9. Регистрация */
+    .register {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+        padding: 30px 20px;
+    }
+    .register-name {
+        width: 100%;
+    }
+    .register_images {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* 10. Футер */
+    .footer {
+        height: auto;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+    .all-buttons {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .information-about-the_websitE {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .input_all {
+        width: 100%;
+    }
+}

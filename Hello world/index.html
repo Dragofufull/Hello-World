@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/Ingredient.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" href="./images/favicon/png-transparent-html-computer-icons-web-development-single-page-application-circle-logo.png" type="image/x-icon">
+
+    <meta name="description" content="Страница про различные веб-технологии, на которой я делюсь своим опытом">
+    <title>Programs</title>
+</head>
+<body>
+    <header class="head">
+         <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <div class="head_logo">
+            <p data-key="nav_logo">Изучение нового начинается с</p>
+            <h2>Hello <span>World</span></h2>
+        </div>
+        <div class="head_menu">
+            <a href="#catalog" class="menustyles animation-btn" data-key="nav_about">О справочнике</a>
+            <a href="#guide" class="menustyles animation-btn" data-key="nav_guide">Содержание</a>
+            <a href="#course-cost" class="menustyles animation-btn" data-key="nav_subscribe">Подписка</a>
+            <a href="#course-cost" class="menustyles animation-btn" data-key="nav_prices">Цены</a>
+        </div>
+        <div class="lang-switcher">
+            <button id="lang-btn" class="lang-btn">
+                <span class="lang-text">RU</span>
+                <img src="https://flagcdn.com/w20/ru.png" id="flag-icon" alt="flag">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalog" id="catalog">
+            <div class="catalog_description">
+                <h1 data-key="nav_catalog_h1">С ПОЛЬЗОЙ ДЛЯ</h1>
+                <h1>
+                    <span>IT</span> 
+                    <span data-key="nav_community">КОМЬЮНИТИ</span>
+                </h1>
+                <p data-key="nav_catalog_p">Справочник айтишника.<br>Релокация, трудоустройство,<br>IT-мероприятия, чаты по странам.</p>
+                <button class="btn" data-key="cta_btn">Хочу справочник</button>
+            </div>
+            <img class="catalog_img" src="./images/WFH.png" alt="Work from home">  
+        </div>
+
+        <div class="catalogforyou">
+            <p data-key="for_you_title">Этот справочник для тебя <br> если ты</p>
+            <div class="cardConteiner">
+                <div class="card">
+                    <div class="card_icon"><img src="./images/Group 22.svg" alt="icon"></div>
+                    <div class="descriptionCard">
+                        <p data-key="card_1">Начинающий айтишник <br> и хочешь войти в среду</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_icon"><img src="./images/NFT.png" alt="icon"></div>
+                    <div class="descriptionCard">
+                        <p data-key="card_2">Крутой айтишник <br> и хочешь больше движа</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_icon"><img src="./images/casual-life-3d-open-cardboard-box 1.png" alt="icon"></div>
+                    <div class="descriptionCard">
+                        <p data-key="card_3">Переехал в другую <br> страну</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_icon"><img src="./images/casual-life-3d-planet-earth-2 1.png" alt="icon"></div>
+                    <div class="descriptionCard">
+                        <p data-key="card_4">Планируешь релокацию</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide" id="guide">
+            <p class="headlin" data-key="guide_title">Содержание справочника</p>
+            <div class="guide-contest-list">
+                <div class="content-list">
+                    <div class="topics-list"><p data-key="topic_1">Релокация</p></div>
+                    <div class="topics-list"><p data-key="topic_2">Чаты по странам</p></div>
+                    <div class="topics-list"><p data-key="topic_3">Работа</p></div>
+                    <div class="topics-list"><p data-key="topic_4">Оплата</p></div>
+                    <div class="topics-list"><p data-key="topic_5">Бизнес</p></div>
+                    <div class="topics-list"><p data-key="topic_6">IT тусовки</p></div>
+                    <div class="topics-list topics-list-none"><p data-key="topic_7">Дополнительные материалы</p></div>
+                </div>
+                <img class="guide-img" src="./images/Mockup 1.png" alt="App mockup">
+            </div>
+        </div>
+
+        <div class="info-block">
+            <p class="infoh1">сообщение от <span>команды</span></p>
+            <div class="code-conteiner">
+                <p id="typewriter-intro" class="intro-text"></p>
+                <div class="code">
+                     <p id="typewriter-code"></p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="info-about-courses">
+            <div class="text-about-courses">
+                <p class="heading" data-key="we_can_title">МЫ МОЖЕМ</p>
+                <p class="p" data-key="we_can_subtitle">помочь тебе <br> найти свое <br> комьюнити</p>
+            </div>
+            <div class="description">
+                <div class="Countries-in-chats">
+                    <p class="info-text">20+</p>
+                    <p class="text" data-key="stat_countries">Стран в чатах</p>
+                </div>
+                <div class="Useful-guides">
+                    <p class="info-text">50</p>
+                    <p class="text" data-key="stat_guides">Полезных гайдов</p>
+                </div>
+                <div class="Positive-reviews">
+                    <p class="info-text">200</p>
+                    <p class="text" data-key="stat_reviews">Положительных отзывов</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-cost" id="course-cost">
+            <div class="paid">
+                 <div class="paid-subscription">
+                    <h1 class="heading" data-key="price_title">Стоимость подписки</h1>
+                    <ul class="subscription-information">
+                        <li data-key="li_1">Найдешь команду в любой стране</li>
+                        <li data-key="li_2">Новая информация каждую неделю</li>
+                        <li data-key="li_3">Доступ ко всем гайдам(50+)</li>
+                        <li data-key="li_4">Удобный бот в «Телеграме»</li>
+                        <li data-key="li_5">Нет аналогов на русскоязычной платформе</li>
+                    </ul>
+                    <p class="bottom-text" data-key="update_info">Обновления справочника происходят каждый месяц, <br> появляются новые разделы, актуализируется информация.</p>
+                 </div>
+
+                <div class="subscription-price">
+                    <div class="subscription-price1">
+                        <p class="heading">13,23 $</p>
+                        <br>
+                        <p class="date-of-receipt" data-key="duration_1">1 месяц</p>
+                    </div>
+                </div>
+                <div class="subscription-price">
+                    <div class="subscription-price1">
+                        <p class="heading">33,1 $</p>
+                        <br>
+                        <p class="date-of-receipt" data-key="duration_3">3 месяца</p>
+                    </div>
+                </div>
+                <div class="subscription-price">
+                    <div class="subscription-price1">
+                        <p class="heading">52,96 $</p>
+                        <br>
+                        <p class="date-of-receipt" data-key="duration_forever">навсегда</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register" id="register">
+                <form class="register-name" action="https://formspree.io/f/xeevwrvl" method="POST" id="my-form">
+                    <p class="Fill_in-the_data" data-key="form_title">Заполните контактные данные</p>
+
+                    <input class="register-input" type="text" id="name-input" data-key="form_name" placeholder="Имя" name="name" autocomplete="off" required>
+                    <input class="register-input" type="tel" id="phone-input" placeholder="+374 (__) __-__-__" name="phone" autocomplete="off" required>
+                    <input class="register-input" type="email" id="email-input" data-key="form_email" placeholder="Почта" name="email" autocomplete="off" required>
+
+                    <button class="button" type="submit" id="submit-btn" data-key="form_btn">Перейти к оплате</button>
+                </form>
+                <img class="register_images" src="./images/Saly-43@2x.png" alt="Illustration">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="IT-land-conteiner">
+            <div class="IT-land">IT-land</div>
+            <div class="network">
+                <a href="#"><img src="./images/Group (1).png" alt="TG"></a>
+                <a href="#"><img src="./images/Vector (1).png" alt="VK"></a>
+                <a href="#"><img src="./images/Vector (2).png" alt="Inst"></a>
+            </div>
+        </div>
+        <div class="information-about-the_websitE">
+            <div class="all-buttons">
+                <div class="column">
+                    <a href="#catalog" class="animation_p" data-key="nav_about">О справочнике</a>
+                    <a href="#guide" class="animation_p" data-key="nav_guide">Содержание</a>
+                    <a href="#course-cost" class="animation_p" data-key="nav_subscribe">Подписка</a>
+                    <a href="#course-cost" class="animation_p" data-key="nav_prices">Цены</a>
+                </div>
+                <div class="column">
+                    <a href="#" class="animation_p" data-key="nav_partners">Партнеры</a>
+                    <a href="#" class="animation_p" data-key="nav_team">Наша команда</a>
+                    <a href="#" class="animation_p" data-key="nav_projects">Наши проекты</a>
+                    <a href="#" class="animation_p" data-key="nav_Politics">Политика</a>
+                </div>
+            </div>
+            <div class="input_all">
+                <p data-key="nav_input_all">Подписка на анонсы. Разреши нам присылать тебе уведомления</p>
+                <p>© 2026 Built by <span class="copyright-name">Furiku</span></p>
+                <input type="email" placeholder="Enter your email" name="email" required>  
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
